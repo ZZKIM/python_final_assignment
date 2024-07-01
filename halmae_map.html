@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f7fd73f6603c16fcdc729e19e7e255ea {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f7fd73f6603c16fcdc729e19e7e255ea" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f7fd73f6603c16fcdc729e19e7e255ea = L.map(
+                "map_f7fd73f6603c16fcdc729e19e7e255ea",
+                {
+                    center: [35.888836, 128.6102997],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6eed89c531d473a8f4debea52a1985fa = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_6eed89c531d473a8f4debea52a1985fa.addTo(map_f7fd73f6603c16fcdc729e19e7e255ea);
+        
+    
+            var marker_cluster_221e27ca796a8097b764b2bdcc376899 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_045e40389d70d3f22e34c1560dc35688 = L.marker(
+                [35.88289410890081, 128.62354927146407],
+                {}
+            ).addTo(marker_cluster_221e27ca796a8097b764b2bdcc376899);
+        
+    
+            var icon_85fad7c71d6f965f48995a1b4460609c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_045e40389d70d3f22e34c1560dc35688.setIcon(icon_85fad7c71d6f965f48995a1b4460609c);
+        
+    
+        var popup_d0774dc0eb9d5732a7775be4e155afa5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_383e355f2b7c3ed61764a3cf280d7ec4 = $(`<div id="html_383e355f2b7c3ed61764a3cf280d7ec4" style="width: 100.0%; height: 100.0%;">시골부뚜막 동대구점 ( 들깨칼국수)</div>`)[0];
+                popup_d0774dc0eb9d5732a7775be4e155afa5.setContent(html_383e355f2b7c3ed61764a3cf280d7ec4);
+            
+        
+
+        marker_045e40389d70d3f22e34c1560dc35688.bindPopup(popup_d0774dc0eb9d5732a7775be4e155afa5)
+        ;
+
+        
+    
+    
+            var marker_a4e4572fa3dac0cea0cacf4e956984c9 = L.marker(
+                [35.884808978311185, 128.60410736284229],
+                {}
+            ).addTo(marker_cluster_221e27ca796a8097b764b2bdcc376899);
+        
+    
+            var icon_09923ba7198c7538f6ca1d7c44a59118 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a4e4572fa3dac0cea0cacf4e956984c9.setIcon(icon_09923ba7198c7538f6ca1d7c44a59118);
+        
+    
+        var popup_80e1ac5406aad11d62c0fdfff15a7203 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_56358ae123325500b74678614dfa1a87 = $(`<div id="html_56358ae123325500b74678614dfa1a87" style="width: 100.0%; height: 100.0%;">매일식당 ( 청국장)</div>`)[0];
+                popup_80e1ac5406aad11d62c0fdfff15a7203.setContent(html_56358ae123325500b74678614dfa1a87);
+            
+        
+
+        marker_a4e4572fa3dac0cea0cacf4e956984c9.bindPopup(popup_80e1ac5406aad11d62c0fdfff15a7203)
+        ;
+
+        
+    
+    
+            var marker_bbd9ba2e132b88358f858cee068fa8a5 = L.marker(
+                [35.87235289435534, 128.59311104227882],
+                {}
+            ).addTo(marker_cluster_221e27ca796a8097b764b2bdcc376899);
+        
+    
+            var icon_0646cb9b3e1a26ce520fae6cc7a118f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_bbd9ba2e132b88358f858cee068fa8a5.setIcon(icon_0646cb9b3e1a26ce520fae6cc7a118f9);
+        
+    
+        var popup_56ad05f8af463b6366e2f8fe0eef2903 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_494e095952deeb691647736934cbdf35 = $(`<div id="html_494e095952deeb691647736934cbdf35" style="width: 100.0%; height: 100.0%;">유경식당 ( 도다리쑥국)</div>`)[0];
+                popup_56ad05f8af463b6366e2f8fe0eef2903.setContent(html_494e095952deeb691647736934cbdf35);
+            
+        
+
+        marker_bbd9ba2e132b88358f858cee068fa8a5.bindPopup(popup_56ad05f8af463b6366e2f8fe0eef2903)
+        ;
+
+        
+    
+    
+            marker_cluster_221e27ca796a8097b764b2bdcc376899.addTo(map_f7fd73f6603c16fcdc729e19e7e255ea);
+        
+</script>
+</html>
